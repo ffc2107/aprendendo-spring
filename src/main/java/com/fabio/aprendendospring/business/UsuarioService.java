@@ -5,14 +5,13 @@ import com.fabio.aprendendospring.infrastructure.exceptions.ConflictException;
 import com.fabio.aprendendospring.infrastructure.exceptions.ResourceNotFoundException;
 import com.fabio.aprendendospring.infrastructure.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
 public class UsuarioService {
+
 
     private final UsuarioRepository usuarioRepository;
     private final PasswordEncoder passwordEncoder;
